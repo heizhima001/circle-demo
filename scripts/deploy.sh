@@ -20,7 +20,7 @@ echo 'name is: '$GH_NAME
 echo 'sitesource is: '$siteSource
 
 if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
-  git chckout gh-pages
+  git checkout gh-pages
   git rm -rf .
 else
   git checkout --orphan gh-pages
